@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+
+   .o-grid {
+    height: 100%;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(10, [row] 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    &--1-four-columns {
+      grid-column: col 1 / span 4;
+      grid-row: row 2 / span 4;
+    }
+
+    &--2-five-columns {
+      grid-column: col 5 / span 5;
+      grid-row: row 2 / span 4;
+    }
+
+    &--3-three-columns {
+      grid-column: col 10 / span 3;
+      grid-row: row 2 / span 2;
+    }
+
+    &--4-three-columns {
+      grid-column: col 10 / span 3;
+      grid-row: row 4 / span 4;
+    }
+
+    &--5-four-columns {
+      grid-column: col / span 4;
+      grid-row: row 6 / span 4;
+    }
+
+    &--6-three-columns {
+      grid-column: col 5 / span 3;
+      grid-row: row 6 / span 2;
+    }
+  }

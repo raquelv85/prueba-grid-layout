@@ -1,0 +1,138 @@
+.box-info {
+  width: calc((100% - 8px) / 3);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.6rem;
+  margin-bottom: .4rem;
+
+  &--one-of-three {
+    width: calc((100% - 8px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: .4rem;
+    }
+  }
+
+  &--one-of-two {
+    width: calc((100% - 8px) / 2);
+
+    &:not(:nth-child(2n)) {
+      margin-right: .4rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__image-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 6rem;
+    position: relative;
+    &__image-wrapper {
+      width: 5rem;
+      height: 5rem;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+    &__image {
+      width: 50%;
+    }
+
+    &__icon-wrapper {
+      width: 3rem;
+      height: 3rem;
+      padding: .6rem;
+      background-color: #ececec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 100%;
+      position: absolute;
+      top: 3.2rem;
+      right: -0.8rem;
+    }
+
+    &__icon {
+      width: 100%;
+    }
+  }
+
+  &__tag {
+    width: 5.8rem;
+    height: 5.8rem;
+    overflow: hidden;
+    border-radius: 100%;
+
+    &__top {
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .4rem;
+    }
+
+    &__bottom {
+      background-color: #ececec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding-top: .6rem;
+    }
+
+    &__text {
+      &--top {
+        font-size: 1.2rem;
+        color: white;
+      }
+
+      &--medium {
+        font-size: .6rem;
+        padding-bottom: 2px;
+        color: #6d6868;
+      }
+
+      &--bottom {
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  
+    &--mg-top-ten {
+      margin-top: 1rem;
+    }
+
+    &--mg-bottom-ten {
+      margin-bottom: 1rem;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+
+
+    &--small {
+      margin-top: .8rem;
+      font-size: .8rem;
+      color: #888484;
+    }
+  }
+}
